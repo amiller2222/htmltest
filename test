@@ -1,0 +1,835 @@
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8" />
+	<title data-text="title">You&#39;ve been Phished!</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+	<style type="text/css">.cf:after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main {
+        display: block;
+    }
+
+    body {
+        line-height: 1;
+    }
+
+    ol,ul {
+        list-style: none;
+    }
+
+    blockquote,q {
+        quotes: none;
+    }
+
+    blockquote:before,blockquote:after,q:before,q:after {
+        content: '';
+        content: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a,span {
+        display: inline-block;
+    }
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .cf:after {
+        content: " ";
+        clear: both;
+        display: block;
+    }
+
+    .cf:after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #eeeeec;
+        font-family: "Open Sans",sans-serif;
+        font-size: 18px;
+        font-size: 1.125rem;
+    }
+
+    p {
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+
+    .wrap {
+        margin: 0 auto;
+        padding: 0 10px;
+        max-width: 960px;
+    }
+
+    @-webkit-keyframes flop {
+        from {
+            background-position: left 0;
+        }
+
+        to {
+            background-position: left -295px;
+        }
+    }
+
+    @-o-keyframes flop {
+        from {
+            background-position: left 0;
+        }
+
+        to {
+            background-position: left -295px;
+        }
+    }
+
+    @keyframes flop {
+        from {
+            background-position: left 0;
+        }
+
+        to {
+            background-position: left -295px;
+        }
+    }
+
+    @-webkit-keyframes float {
+        from {
+            -webkit-transform: translate(-10px, 0);
+        }
+
+        to {
+            -webkit-transform: translate(10px, 0);
+        }
+    }
+
+    @-o-keyframes float {
+        from {
+            -o-transform: translate(-10px, 0);
+        }
+
+        to {
+            -o-transform: translate(10px, 0);
+        }
+    }
+
+    @keyframes float {
+        from {
+            transform: translate(-10px, 0);
+        }
+
+        to {
+            transform: translate(10px, 0);
+        }
+    }
+
+    @-webkit-keyframes float2 {
+        from {
+            -webkit-transform: translate(10px, 5px);
+        }
+
+        to {
+            -webkit-transform: translate(10px, -5px);
+        }
+    }
+
+    @-o-keyframes float2 {
+        from {
+            -o-transform: translate(10px, 5px);
+        }
+
+        to {
+            -o-transform: translate(10px, -5px);
+        }
+    }
+
+    @keyframes float2 {
+        from {
+            transform: translate(10px, 5px);
+        }
+
+        to {
+            transform: translate(10px, -5px);
+        }
+    }
+
+    @-webkit-keyframes float3 {
+        0% {
+            -webkit-transform: translate(-10px, -5px);
+        }
+
+        50% {
+            -webkit-transform: translate(0, 10px);
+        }
+
+        100% {
+            -webkit-transform: translate(10px, 5px);
+        }
+    }
+
+    @-o-keyframes float3 {
+        0% {
+            -o-transform: translate(-10px, -5px);
+        }
+
+        50% {
+            -o-transform: translate(0, 10px);
+        }
+
+        100% {
+            -o-transform: translate(10px, 5px);
+        }
+    }
+
+    @keyframes float3 {
+        0% {
+            transform: translate(-10px, -5px);
+        }
+
+        50% {
+            transform: translate(0, 10px);
+        }
+
+        100% {
+            transform: translate(10px, 5px);
+        }
+    }
+
+    header {
+        background: #0e8d94;
+        background-color: #0e8d94;
+        background-image: -webkit-linear-gradient(#0d8086, #0e8d94);
+        background-image: -o-linear-gradient(#0d8086, #0e8d94);
+        background-image: linear-gradient(#0d8086, #0e8d94);
+        color: #e9d558;
+        padding: 100px 0;
+        position: relative;
+        text-shadow: 1px 1px 1px #0a6165;
+    }
+
+    header .top {
+        margin: 0 auto 30px;
+        max-width: 685px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+    }
+
+    header .fish {
+        background: url(https://d25q7gseii1o1q.cloudfront.net/training/fish/fish.png) no-repeat;
+        -webkit-animation: flop 0.8s steps(2) infinite;
+        animation: flop 0.8s steps(2) infinite;
+        float: left;
+        height: 147px;
+        margin-right: 50px;
+        width: 203px;
+    }
+
+    @media all and (max-width: 640px) {
+        header .fish {
+            float: none;
+            margin: 0 auto;
+        }
+    }
+
+    header h1 {
+        color: #fff;
+        float: right;
+        font-size: 36px;
+        font-size: 2.25rem;
+        margin-bottom: 36px;
+        max-width: 430px;
+    }
+
+    @media all and (max-width: 640px) {
+        header h1 {
+            float: none;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    header h1 span:first-child {
+        color: #e9d558;
+        display: block;
+        font-size: 91px;
+        font-size: 5.6875rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    header h1 strong {
+        color: #ffab07;
+    }
+
+    header p:last-child {
+        clear: both;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    header .bubble,header .bubble:after {
+        background: rgba(255,255,255,0.2);
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        display: block;
+        height: 80px;
+        position: absolute;
+        width: 80px;
+    }
+
+    header .bubble:after {
+        background: rgba(255,255,255,0.1);
+        content: "";
+        height: 30px;
+        width: 30px;
+        right: 10px;
+        top: 10px;
+    }
+
+    header .bubble:first-of-type {
+        -webkit-animation: float 1.5s infinite alternate;
+        animation: float 1.5s infinite alternate;
+        height: 60px;
+        width: 60px;
+    }
+
+    header .bubble:nth-of-type(2) {
+        -webkit-animation: float2 1.3s infinite alternate;
+        animation: float2 1.3s infinite alternate;
+    }
+
+    header .bubble:last-of-type {
+        -webkit-animation: float3 3s infinite alternate;
+        animation: float3 3s infinite alternate;
+        height: 90px;
+        width: 90px;
+    }
+
+    .mail {
+        background: #434d53 url(https://d25q7gseii1o1q.cloudfront.net/training/fish/mail.png);
+        border-bottom: 20px solid #0d7f85;
+        border-top: 20px solid #0d7f85;
+        color: #fff;
+        overflow: hidden;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .mail p {
+        color: #e9d558;
+        float: right;
+        text-align: right;
+        width: 40%;
+    }
+
+    .mail p:first-child {
+        color: #fff;
+        float: left;
+        text-align: left;
+    }
+
+    .mail p:not(:last-child) {
+        padding: 10px 0;
+    }
+
+    @media all and (max-width: 480px) {
+        .mail p {
+            float: none !important;
+            margin: 0 auto 10px !important;
+            text-align: center;
+            width: 80%;
+        }
+    }
+
+    .mail p:last-child {
+        color: #ffab07;
+        float: none;
+        font-size: 16px;
+        font-size: 1rem;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    .mail .screeny {
+        clear: both;
+        display: inline-block;
+        margin-bottom: 30px;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .mail .screeny img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .mail .screeny .link {
+        background: url(https://d25q7gseii1o1q.cloudfront.net/training/fish/pixel.gif);
+        border: 1px solid #ffab07;
+        -webkit-box-shadow: 0 0 2px #ffab07;
+        box-shadow: 0 0 2px #ffab07;
+        display: block;
+        position: absolute;
+        left: 3%;
+        top: 69%;
+        height: 4%;
+        width: 42%;
+        z-index: 1;
+    }
+
+    .mail .screeny .link span {
+        background-color: #e6e8f0;
+        background-image: -webkit-linear-gradient(#fefefe, #e6e8f0);
+        background-image: -o-linear-gradient(#fefefe, #e6e8f0);
+        background-image: linear-gradient(#fefefe, #e6e8f0);
+        border: 1px solid #666;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        color: #444;
+        font-size: 12px;
+        font-size: 0.75rem;
+        line-height: 140%;
+        opacity: 0;
+        padding: 3px;
+        position: absolute;
+        top: -200%;
+        text-align: left;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        min-width: 240px;
+    }
+
+    .mail .screeny .link:hover span {
+        opacity: 1;
+    }
+
+    footer {
+        background: #eeeeec;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    footer button {
+        background: #72ad75;
+        border: 0 none;
+        color: #fff;
+        cursor: pointer;
+        font-family: "Open Sans",sans-serif;
+        font-weight: bold;
+        line-height: 40px;
+        padding: 0 38px;
+        text-transform: uppercase;
+    }
+
+    footer button:hover {
+        background: #82b685;
+    }
+
+    footer button:active {
+        background: #62a465;
+    }
+
+    .langDrop {
+          border: 1px solid white;
+          border-radius: 4px;
+          color: white;
+          display: inline-block;
+          font-size: 14px;
+          line-height: 160%;
+          margin-left: 10px;
+          padding: 5px 15px;
+          position: fixed;
+          top: 10px; right: 10px;
+          vertical-align: middle;
+          z-index: 2;
+        }
+
+        .langDrop span:before {
+          content: 'Language:';
+          position: absolute;
+          top: 5px; left: -80%;
+        }
+
+        .langDrop span:after {
+          content: ' ▾';
+        }
+
+        .langDrop ul {
+          border: 1px solid transparent;
+          border-top: 0 none;
+          list-style: none;
+          max-height: 0;
+          opacity: 0;
+          overflow: auto;
+          position: absolute;
+          top: 100%;
+          left: -1px;
+          text-align: center;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          min-width: 100%;
+          min-width: -webkit-calc(100% + 2px);
+          min-width: calc(100% + 2px);
+        }
+
+        .langDrop ul li {
+          padding: 5px 0;
+        }
+
+        .langDrop.notap:hover, .langDrop.hover {
+          background: #0D7F85;
+          border-radius: 4px 4px 0 0;
+        }
+
+        .langDrop.notap:hover ul, .langDrop.hover ul {
+          background: #0D7F85;
+          border-bottom: 0 none;
+          border-color: white;
+          max-height: 400px;
+          opacity: 1;
+        }
+
+        .langDrop.notap:hover li, .langDrop.hover li {
+          border-bottom: 1px solid white;
+        }
+
+        .langDrop.notap:hover li:hover, .langDrop.hover li:hover  {
+          background: #E9D558;
+          color: #333;
+        }
+/* phish hook example: https://www.w3schools.com/css/css_tooltip.asp */
+.tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	border-bottom: 3px solid red;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+.tooltiptext {
+	text-transform: none;
+    visibility: hidden;
+    width: 250px;
+    background-color: #f7e6e4;
+    border-top: solid red;
+    color: #000;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: -50px; /* Position the tooltip above the text */
+    left: 50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 0px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.tooltiptext img {
+	float: left;
+	margin-right: 10px;
+	margin-left: -30px;
+	margin-top: -10px;
+	width: 30px;
+	height: 30px;
+}
+	</style>
+	<meta content="width=device-width, initial-scale=1" name="viewport" /><!--[if lt IE 9]>
+    <style type="text/css">
+      header .fish { background: url(https://d25q7gseii1o1q.cloudfront.net/training/fish/fish.gif) no-repeat }
+      header .bubble { background: url(https://d25q7gseii1o1q.cloudfront.net/training/fish/bubble2.gif) no-repeat }
+      header .bubble:first-of-type { background: url(https://d25q7gseii1o1q.cloudfront.net/training/fish/bubble1.gif) no-repeat }
+      header .bubble:last-of-type { background: url(https://d25q7gseii1o1q.cloudfront.net/training/fish/bubble3.gif) no-repeat }
+
+      .mail .screeny .link { *left: 18%; *width: 29%; }
+    </style>
+    <script src="https://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <![endif]--><script type="text/javascript">
+  window.training_page = 'fish';
+  </script><script src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js" data-apikey="dfe0bf684022c9c6cd5177bd22c32dc4"></script><script>
+              Bugsnag.releaseStage = "production";
+              Bugsnag.appVersion = "518fc85252c184e5a49a43c017fa22c8669fcc4d";
+              Bugsnag.metaData = {
+                variables: {"campaign_id":970754,"campaign_guid":"test_2ca1337c89","account_logo":null,"attachment_custom_training_id":null,"attachment_custom_training_url":"","attachment_training_type":"","custom_training_id":null,"custom_training_url":"","training_type":"how_to_mouse_over_a_link_with_logo","account_id":21041,"account_partner_id":3,"correlation_id":"429ca1b8-c195-472a-996e-2455f3b47b35","name":"wall-e","name_possessive":"wall-e's","target_guid":"test_2ca1337c89","adobe_flash_detection":true,"adobe_pdf_detection":true,"java_detection":true,"quicktime_detection":true,"realplayer_detection":true,"silverlight_detection":true,"wmp_detection":true,"from_name":"Box Sign Up","from_email":"box.noreply@register-now.world","subject":"Verify Your Email Address"}
+              }
+              window.training_page = "how_to_mouse_over_a_link_with_logo";
+            </script><script type="text/javascript" src="/assets/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/plugin_detect.js?guid=test_2ca1337c89&correlation_id=429ca1b8-c195-472a-996e-2455f3b47b35"></script><script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/java.js?guid=test_2ca1337c89&correlation_id=429ca1b8-c195-472a-996e-2455f3b47b35"></script><script type="text/javascript" src="https://java.com/js/deployJava.js"></script><script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/flash.js?guid=test_2ca1337c89&correlation_id=429ca1b8-c195-472a-996e-2455f3b47b35"></script><script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/pdf.js?guid=test_2ca1337c89&correlation_id=429ca1b8-c195-472a-996e-2455f3b47b35"></script><script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/quicktime.js?guid=test_2ca1337c89&correlation_id=429ca1b8-c195-472a-996e-2455f3b47b35"></script><script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/realplayer.js?guid=test_2ca1337c89&correlation_id=429ca1b8-c195-472a-996e-2455f3b47b35"></script><script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/silverlight.js?guid=test_2ca1337c89&correlation_id=429ca1b8-c195-472a-996e-2455f3b47b35"></script><script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/wmp.js?guid=test_2ca1337c89&correlation_id=429ca1b8-c195-472a-996e-2455f3b47b35"></script><script type="text/javascript">
+              window.plugin_detector          = PluginDetect;
+              window.account_logo             = "";
+              window.campaign_guid            = "test_2ca1337c89";
+              window.company_name             = "wall-e";
+              window.company_name_possessive  = "wall-e's";
+              window.content_bucket           = "https://tscontent.s3.amazonaws.com/";
+              window.correlation_id           = "429ca1b8-c195-472a-996e-2455f3b47b35";
+              window.environment              = "production";
+              window.from_email_address       = "Box Sign Up (box.noreply@register-now.world)";
+              window.subject_line             = "Verify Your Email Address";
+              window.target_guid              = "test_2ca1337c89";
+              window.template                 = "how_to_mouse_over_a_link_with_logo";
+              </script>
+            <script src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js" data-apikey="dfe0bf684022c9c6cd5177bd22c32dc4"></script>
+            <script>
+              Bugsnag.releaseStage = "production";
+              Bugsnag.appVersion = "518fc85252c184e5a49a43c017fa22c8669fcc4d";
+              Bugsnag.metaData = {
+                variables: {"campaign_id":970760,"campaign_guid":"test_0c7c0f5f15","account_logo":null,"attachment_custom_training_id":null,"attachment_custom_training_url":"","attachment_training_type":"","custom_training_id":31874,"custom_training_url":"","training_type":"custom","account_id":21041,"account_partner_id":3,"correlation_id":"24d99cd6-96db-42e6-9de2-1e6d557486c8","name":"wall-e","name_possessive":"wall-e's","target_guid":"test_0c7c0f5f15","adobe_flash_detection":true,"adobe_pdf_detection":true,"java_detection":true,"quicktime_detection":true,"realplayer_detection":true,"silverlight_detection":true,"wmp_detection":true,"from_name":"Uber","from_email":"uber@stubclub.co","subject":"Hungry for savory savings? Here's 50% off."}
+              }
+              window.training_page = "custom";
+            </script>
+            <script type="text/javascript" src="/assets/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            <script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/plugin_detect.js?guid=test_0c7c0f5f15&correlation_id=24d99cd6-96db-42e6-9de2-1e6d557486c8"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/java.js?guid=test_0c7c0f5f15&correlation_id=24d99cd6-96db-42e6-9de2-1e6d557486c8"></script>
+<script type="text/javascript" src="https://java.com/js/deployJava.js"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/flash.js?guid=test_0c7c0f5f15&correlation_id=24d99cd6-96db-42e6-9de2-1e6d557486c8"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/pdf.js?guid=test_0c7c0f5f15&correlation_id=24d99cd6-96db-42e6-9de2-1e6d557486c8"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/quicktime.js?guid=test_0c7c0f5f15&correlation_id=24d99cd6-96db-42e6-9de2-1e6d557486c8"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/realplayer.js?guid=test_0c7c0f5f15&correlation_id=24d99cd6-96db-42e6-9de2-1e6d557486c8"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/silverlight.js?guid=test_0c7c0f5f15&correlation_id=24d99cd6-96db-42e6-9de2-1e6d557486c8"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/wmp.js?guid=test_0c7c0f5f15&correlation_id=24d99cd6-96db-42e6-9de2-1e6d557486c8"></script>
+            <script type="text/javascript">
+              window.plugin_detector          = PluginDetect;
+              window.account_logo             = "";
+              window.campaign_guid            = "test_0c7c0f5f15";
+              window.company_name             = "wall-e";
+              window.company_name_possessive  = "wall-e's";
+              window.content_bucket           = "https://tscontent.s3.amazonaws.com/";
+              window.correlation_id           = "24d99cd6-96db-42e6-9de2-1e6d557486c8";
+              window.environment              = "production";
+              window.from_email_address       = "Uber (uber@stubclub.co)";
+              window.subject_line             = "Hungry for savory savings? Here&#39;s 50% off.";
+              window.target_guid              = "test_0c7c0f5f15";
+              window.template                 = "custom";
+              </script>
+</head>
+<body>
+<div class="langDrop" data-lang="en-US"><span>English - US</span>
+<ul>
+	<li data-lang="ar">Arabic</li>
+	<li data-lang="zh">Chinese - Simpl</li>
+	<li data-lang="da">Danish</li>
+	<li data-lang="nl">Dutch</li>
+	<li data-lang="fi">Finnish</li>
+	<li data-lang="fr">French - FR</li>
+	<li data-lang="de">German</li>
+	<li data-lang="el">Greek</li>
+	<li data-lang="hi">Hindi</li>
+	<li data-lang="it">Italian</li>
+	<li data-lang="ja">Japanese</li>
+	<li data-lang="ko">Korean</li>
+	<li data-lang="ro">Romanian</li>
+	<li data-lang="es">Spanish - LatAm</li>
+</ul>
+</div>
+
+<header>
+<div class="wrap">
+<div style="text-align: center;">
+<div style="text-align:center"><img alt="" height="121" src="https://ts-uploads.s3.amazonaws.com/training/production/21041/el-logo-removebg-preview--1--2848ab.png" width="461" /></div>
+<br />
+&nbsp;</div>
+&nbsp;
+
+<div class="top">
+<div class="fish">&nbsp;</div>
+
+<h1><span data-text="h1">Oh no!</span> <span data-text="h2">You fell for a <strong>phish!</strong></span></h1>
+</div>
+
+<p data-text="p0">Don&#39;t worry, this was an approved phishing simulation run by wall-e.<br />
+<strong>We&#39;re here to help.</strong></p>
+</div>
+</header>
+
+<section class="mail">
+<center><br />
+<br />
+&nbsp; &nbsp;
+<div class="tooltip">
+<div>&nbsp;</div>
+
+<div class="tooltiptext" style="width: 250px;"><img alt="Tooltip Image" height="50" src="https://tslp.s3.amazonaws.com/training/production/314/fish-hook-5208b6.png" width="50" />
+<p style="font-weight: 300">Link embedded in text or image</p>
+</div>
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+	<tbody>
+		<tr>
+			<td style="font-weight: normal; border: 2px solid #D0D0D0; border-radius: 2px;">
+			<table cellpadding="0" cellspacing="0" class="container">
+				<tbody>
+					<tr>
+						<td>
+						<div class="tooltip"><img alt="" height="52" src="https://ts-uploads.s3.amazonaws.com/training/production/21041/ewt-af4be6.png" width="621" />
+						<div class="tooltiptext" style="width: 150px;"><img alt="Tooltip Image" height="50" src="https://tslp.s3.amazonaws.com/training/production/314/fish-hook-5208b6.png" width="50" />
+						<p style="font-weight: 300">Email Warning Tag</p>
+						</div>
+						</div>
+						</td>
+						<td><!-- phish hook --></td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold; font-size: 24px; padding: 20px;">Hello, <!-- phish hook -->
+						<div class="tooltip">[First Name]
+						<div class="tooltiptext" style="width: 150px;"><img alt="Tooltip Image" height="50" src="https://tslp.s3.amazonaws.com/training/production/314/fish-hook-5208b6.png" width="50" />
+						<p style="font-weight: 300">Personalization</p>
+						</div>
+						</div>
+						<!-- phish hook --></td>
+					</tr>
+					<tr>
+						<td style="color: #626262; padding-left: 20px;"><span style="color:#dddddd;">Your teammates are trying to reach you in <span style="font-weight: bold;">Microsoft Teams</span></span></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="center" style="padding: 20px;" valign="middle">
+						<table border="0" cellpadding="0" cellspacing="0" width="500">
+							<tbody>
+								<tr>
+									<td style="color: #626262; padding: 20px; background-color: #DFDFDF;">please submit by <!-- phish hook -->
+									<div class="tooltip">wednesday
+									<div class="tooltiptext" style="width: 250px;"><img alt="Tooltip Image" height="50" src="https://tslp.s3.amazonaws.com/training/production/314/fish-hook-5208b6.png" width="50" />
+									<p>Sense of urgency or limited time offer</p>
+									</div>
+									</div>
+									<!-- phish hook --> of next week.</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" style="padding: 20px;" valign="middle">
+						<table border="0" cellpadding="0" cellspacing="0" width="400">
+							<tbody>
+								<tr>
+									<td><!-- phish hook -->
+									<div class="tooltip">
+									<div><a href="http://" style="background-color:#403587;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:80px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">Reply in Teams</a></div>
+
+									<div class="tooltiptext" style="width: 250px;"><img alt="Tooltip Image" height="50" src="https://tslp.s3.amazonaws.com/training/production/314/fish-hook-5208b6.png" width="50" />
+									<p style="font-weight: 300">Link embedded in text or image</p>
+									</div>
+									</div>
+									<!-- phish hook --></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="font-size: 10px; color: #626262; padding: 20px; background-color: #DFDFDF; border-top: 2px solid #D0D0D0;">This email was sent from an unattended mailbox. Update your email preferences in Teams.<br />
+						<br />
+						&copy; Microsoft Corporation, One <!-- phish hook -->
+						<div class="tooltip">Microsofe
+						<div class="tooltiptext" style="width: 300px;"><img alt="Tooltip Image" height="50" src="https://tslp.s3.amazonaws.com/training/production/314/fish-hook-5208b6.png" width="50" />
+						<p>Poor representation of legitimate brand or obvious formatting mistakes</p>
+						</div>
+						</div>
+						<!-- phish hook --> Way, Redmond WA 98052-7329<br />
+						<br />
+						<img alt="" height="37" src="https://tslp.s3.amazonaws.com/training/production/314/logo-378ae4.png" width="155" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<div class="wrap">
+<p data-text="p1"><br />
+<br />
+One of the most effective means of spotting a phish is to look at the link that the message is asking you to click.</p>
+
+<p data-text="p2"><br />
+<br />
+Tap/Hover your mouse over the link below, does it look suspicious to you?</p>
+
+<p data-text="p3"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+If you suspect that the email is fraudulent, go directly to the site (e.g. Facebook, LinkedIn, PayPal, your bank, etc.)</p>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<p data-text="p4">By clicking &quot;Acknowledge&quot; below you agree that you have read the training material.</p>
+
+<form action="/training/acceptance" id="training-form" method="post"><button data-text="ack" type="submit">Acknowledge</button></form>
+
+<p style="font-size: 80%; margin-bottom: 0; margin-top: 20px;"><span data-text="disclaimer">This phishing simulation was provided by your employer and may contain logos from unaffiliated companies. Please only contact your employer regarding this message.</span> <span data-text="privacy-policy">Confidential and Proprietary - <a href="https://www.wombatsecurity.com/privacy-policy" target="_blank">Privacy Policy</a></span></p>
+</div>
+</footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script type="text/javascript">
+  window.template = "how_to_mouse_over_a_link";
+  window.language_base_path = "languages";
+  window.language_file_prefix = "lang_";
+</script><script src="https://tslp.s3.amazonaws.com/languages/language.18071.js"></script><script src="//tslp.s3.amazonaws.com/assets/js/training.js"></script></body>
+<script src="/assets/all.js?guid=test_2ca1337c89&correlation_id=429ca1b8-c195-472a-996e-2455f3b47b35"></script><script src="/assets/all.js?guid=test_0c7c0f5f15&correlation_id=24d99cd6-96db-42e6-9de2-1e6d557486c8"></script></html>
